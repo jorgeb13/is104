@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script src="js/jquery-1.8.1.js"></script>
+<script>
+$(function() {
+$(document.body).on('keydown', function(e) {
+var keypressed = $('#keypressed');
+switch (e.which) {
+case 37:
+console.log( 'Venstre piltast trykket!' );
+break;
+        
+case 39:
+console.log( 'Høyre piltast trykket!' );
+break;
+				
+case 38:
+console.log( 'Opp piltast trykket!' );
+break;
+
+case 40:
+console.log( 'Ned piltast trykket!' );
+		}
+		});
+	});
+</script>
+</head>
+<body>
+<p><h1>Oppgave 0: Fange hendelser fra tastatur</h1></p>
+<p id="keypressed"></p>
+</body>
+</html>	
